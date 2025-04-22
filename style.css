@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: tan;
 }
@@ -51,8 +56,9 @@ ul a:hover {
     align-items: center;
 }
 
-.hero-section_wrapper h1 {
+.hero-section_wrapper .hero-section_title {
     margin-bottom: 24px;
+    font-size: 40px;
     font-family: "Bungee Spice", sans-serif;
     /* font-family: "Bungee Tint", sans-serif; */
 }
@@ -69,6 +75,83 @@ ul a:hover {
 .hero-section__link:hover {
     background-color: beige;
     color: peru;
+}
+
+.quote {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    padding: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote .quote-text {
+    color: peru;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.text {
+    text-align: center;
+}
+
+.assignment-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 80px;
+
+}
+
+.assignment-list-card {
+    border: 2px solid brown;
+    width: 45%;
+    height: 200px;
+    background-color: azure;
+}
+
+footer {
+    background-color: black;
+    padding-block: 40px;
+    color: white;
+}
+
+/* Mobile responsive code */
+
+@media (width < 768px) {
+    .assignment-list-card {
+        background-color: blue;
+    }
+
+    footer {
+        background-color: bisque;
+    }
+}
+
+@media (min-width: 1200px) {
+    .quote {
+        background-color: black;
+    }
+}
+
+.go-to-top {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+}
+
+.go-to-top svg {
+    fill: white;
 }
 
 /* .navbar {
