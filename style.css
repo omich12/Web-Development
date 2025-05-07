@@ -154,6 +154,26 @@ footer {
     fill: white;
 }
 
+.position-relative {
+    position: relative;
+    padding: 40px 30px;
+    background-color: blue;
+}
+
+.position-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* height: 200px;
+    width: 200px; */
+    transform: translate(-50%, -50%);
+}
+
+.w-100 {
+    width: 100%;
+}
+
+
 /* .navbar {
     list-style: none;
     display: flex;
